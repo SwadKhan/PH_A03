@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinterio</title>
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Daisy UI CDN -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+.manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+</style>
+
+<script>
+ tailwind.config= {
+    theme: {
+      extend: {
+        colors: {
+          'customGreen': 'rgba(171, 239, 95, 1)',
+          'light-green':'rgba(171, 239, 95, 0.5)',
+          'background':'rgba(244, 244, 244, 1)'
+        },
+      },
+    },
+  };
+</script>
+ 
+</head>
+<body class="manrope">
+ <header class="md:container mx-auto mt-8 bg-white">
+    <nav><div class="navbar bg-base-100 justify-between">
+        <div class="navbar-start flex-1">
+            <img  class="w-8 h-8 bg-light-green rounded-full" src="./assets/icons8-arrow-50 (1).png" alt="">
+            <a class="btn btn-ghost font-extrabold text-3xl">Rinterio</a>
+        </div>
+
+        <div class="navbar-start hidden pl-10 lg:flex mx-auto">
+            <ul class="menu menu-horizontal lg:gap-3 px-1">
+                <li class="font-extrabold"><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+            </ul>
+        </div>
+
+    <div class="hidden lg:flex gap-4 ">
+        <div class="w-12 h-12 rounded-full border-2 border-slate-500 flex justify-center items-center">
+        <img class="w-6 h-6" src="./assets/icons8-search-64.png" alt="">
+    </div>
+
+    <div class="w-12 h-12 rounded-full border-2 border-slate-500 flex justify-center items-center">   
+        <img class="w-6 h-6" src="./assets/icons8-shopping-50.png" alt="">
+    </div>
+</div>
+        
+
+        <div class="hidden ml-4 lg:block">
+          
+            <a class="btn bg-customGreen text-xl">Book consult
+                <img class="w-8 h-8" src="./assets/icons8-arrow-50.png" alt="">
+            </a>   
+        </div>
+
+        <!-- Dropdown for small screens -->
+        <div class=" dropdown lg:hidden mr-8">
+            <div tabindex="0" role="button" class="h-9 w-9 rounded-full bg-slate-300 flex justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor ">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-6 pr-4 p-2 shadow">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </div>
+    </div></nav>
+     
+    <!-- header/image -->
+       <div class="flex flex-col items-center justify-center text-center lg:gap-6 gap-2">
+        <img src="./assets/banner.png" alt="">
+        <div class="lg:gap-6 gap-2">
+            <h3 class="lg:text-6xl font-bold mb-4 text-3xl">A barn house of this design has a <br>striking appearance</h3>
+            <p class="lg:text-xl text-normal text-balance font-medium m-1 mb-4">The  barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+            <a class="btn bg-light-green mt-6">View Details
+                <img class="w-8 h-8 " src="./assets/icons8-arrow-50.png" alt="">
+            </a>
+        </div>
+       </div>
+
+    </header>
+    
+    <main>
+     <!-- About us -->
+      <div class="bg-background lg:py-24 py-10 lg:mt-28 mt-10">
+        
+            <img class="hidden lg:flex ml-[87px]" src="./assets/Vector.png" alt="">
+      
+        <div class="flex lg:flex-row flex-col w-[335px] h-[804px] lg:w-[1170px] lg:h-[560px] gap-8 mt-8  mx-auto">
+    
+        <div class="lg:w-[560px]  w-[335px]">
+            <div >
+                <a class="btn w-32 ml-[104px] lg:ml-0 h-10 mb-4 bg-white">
+                    <img class="w-6 h-6 " src="./assets/icons8-arrow-30.png" alt="">
+                    About Us
+                </a> 
+            </div>  
+
+          <h3 class="font-bold text-3xl lg:text-left gap-6 mb-12 text-center ">We design thoughtful, <br> liveable spaces</h3>
+          <p class="text-center lg:text-left">The barn house captivates with its blend of rustic charm and 
+            modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            <div class="flex gap-4 mt-8 bg-white rounded-lg p-6">
+                <img src="./assets/commercial.png" alt="">
+                <div class="text-balance w-70 h-20">
+                    <h2 class="font-extrabold text-lg">Commercial<h2>
+                        <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>   
+            </div>
+            <div class="flex gap-4 mt-8 bg-white rounded-lg p-6">
+                <img src="./assets/commercial.png" alt="">
+                <div class="text-balance w-70 h-20">
+                    <h2 class="font-extrabold text-lg">Commercial<h2>
+                        <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>   
+            </div>
+        </div>
+        <div>
+            <img src="./assets/Rectangle.png" alt="">
+        </div>  
+    </div>
+</div>
+        
+
+    </main>
+</body>
+</html>
