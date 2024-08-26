@@ -27,12 +27,13 @@
       extend: {
         colors: {
           'customGreen': 'rgba(171, 239, 95, 1)',
-          'light-green':'rgba(171, 239, 95, 0.5)',
+          'light-green':'rgba(171, 239, 95, 1)',
           'background':'rgba(244, 244, 244, 1)',
           'card1':'rgba(231, 193, 211, 1)',
           'card2':'rgba(239, 218, 110, 1)',
           'card3':'rgba(164, 218, 195, 1)',
-          'card4':'rgba(119, 170, 234, 1)'
+          'card4':'rgba(119, 170, 234, 1)',
+          'footerP':'rgba(115, 115, 115, 1)'
         },
       },
     },
@@ -72,7 +73,7 @@
 </div>
         
 
-        <div class="hidden ml-4 lg:block">
+        <div class="hidden ml-4 lg:flex">
           
             <a class="btn bg-customGreen text-xl">Book consult
                 <img class="w-8 h-8" src="./assets/icons8-arrow-50.png" alt="">
@@ -207,7 +208,7 @@
          <div class="grid lg:grid-cols-7 grid-cols-1  gap-4 lg:mx-28 mx-auto" >
             <!-- img1 -->
             <div class="lg:col-span-5  flex flex-col lg:flex-row gap-4 lg:mt-8 mt-4 bg-white rounded-lg p-6 border-2 lg:mx-auto mx-2">
-                <img src="./assets/img1.png" alt="">
+                <img class="w-[296px] h-[180px]" src="./assets/img1.png" alt="">
                 <div class=" flex flex-col text-left text-balance gap-5">
                     <h2 class="font-extrabold text-lg">Commercial<h2>
                         <p>Discover our latest commercial projects, featuring innovative designs that seamlessly integrate functionality with modern aesthetics, showcasing our dedication to excellence and creativity.</p>
@@ -231,7 +232,7 @@
             </div>
             <!-- img4 -->
             <div class="lg:col-span-4  flex flex-col lg:flex-row gap-4 lg:mt-8 mt-4 bg-white rounded-lg p-6 border-2 lg:mx-auto mx-2 order-2">
-                <img src="./assets/img4.png" alt="">
+                <img class="w-[296px] h-[180px]" src="./assets/img4.png" alt="">
                 <div class=" flex flex-col text-left text-balance gap-5">
                     <h2 class="font-extrabold text-lg">Integrity<h2>
                         <p>Upholding the highest standards of integrity in every project, we ensure transparency, honesty, and ethical practices throughout the entire process.</p>
@@ -248,7 +249,7 @@
                 <img class="w-[296px] h-[180px] " src="./assets/img5.png" alt="">
             </div>
             <!-- img6 -->
-            <div class="lg:hidden flex lg:col-span-2 mx-2 lg:mx-auto lg:mt-8 mt-4 bg-white rounded-lg p-6 border-2 flex justify-center items-center order-4">
+            <div class="lg:hidden lg:col-span-2 mx-2 lg:mx-auto lg:mt-8 mt-4 bg-white rounded-lg p-6 border-2 flex justify-center items-center order-4">
                 <img class="w-[296px] h-[180px] " src="./assets/img5.png" alt="">
             </div>
         </div>
@@ -304,4 +305,36 @@
         </section>
     </main>
 </body>
+<footer>
+    <div class="bg-black">
+        <div class="lg:w-[560px]  w-[335px] mx-auto pt-16 ">
+            <div class="flex items-center justify-center ml-1/2">
+                <div class="w-10 h-10 rounded-full bg-light-green flex justify-center items-center">
+                    <img  class="w-6 h-6  rounded-full " src="./assets/icons8-arrow-50 (2).png" alt="">
+                </div>
+                
+                <h2 class="btn btn-ghost font-extrabold text-3xl text-white">Rinterio</h2>
+            </div>
+         </div>
+    
+         <p class="text-center text-balance mt-6 text-footerP">The barn house captivates with its blend of rustic charm and 
+            modern sophistication, featuring weathered wood, sleek metal accents</p>
+
+        <div class=" flex flex-col lg:flex-row lg:gap-16 gap-1 justify-center items-center mt-6">
+            <div><h5 class="text-center text-balance mt-6 text-footerP" >Home</h5></div>
+            <div><h5 class="text-center text-balance mt-6 text-footerP">Service</h5></div>
+            <div><h5 class="text-center text-balance mt-6 text-footerP">Portfolio</h5></div>
+            <div><h5 class="text-center text-balance mt-6 text-footerP">Blogs</h5></div>
+            <div><h5 class="text-center text-balance mt-6 text-footerP">Contact Us</h5></div>
+            
+        </div>
+        <div class="flex justify-center items-center pb-16">
+            <a class="btn bg-customGreen text-xl mt-8 mx-auto rounded-full">Book consult
+                <img class="w-8 h-8 " src="./assets/icons8-arrow-50.png" alt="">
+            </a>  
+        </div>
+           
+    </div>
+   
+</footer>
 </html>
