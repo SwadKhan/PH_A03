@@ -28,7 +28,11 @@
         colors: {
           'customGreen': 'rgba(171, 239, 95, 1)',
           'light-green':'rgba(171, 239, 95, 0.5)',
-          'background':'rgba(244, 244, 244, 1)'
+          'background':'rgba(244, 244, 244, 1)',
+          'card1':'rgba(231, 193, 211, 1)',
+          'card2':'rgba(239, 218, 110, 1)',
+          'card3':'rgba(164, 218, 195, 1)',
+          'card4':'rgba(119, 170, 234, 1)'
         },
       },
     },
@@ -40,7 +44,10 @@
  <header class="md:container mx-auto mt-8 bg-white">
     <nav><div class="navbar bg-base-100 justify-between">
         <div class="navbar-start flex-1">
-            <img  class="w-8 h-8 bg-light-green rounded-full" src="./assets/icons8-arrow-50 (1).png" alt="">
+            <div class="w-10 h-10 rounded-full bg-light-green flex justify-center items-center">
+                <img  class="w-6 h-6  rounded-full " src="./assets/icons8-arrow-50 (2).png" alt="">
+            </div>
+            
             <a class="btn btn-ghost font-extrabold text-3xl">Rinterio</a>
         </div>
 
@@ -142,7 +149,46 @@
         </div>  
     </div>
 </div>
-        
+<!-- How it works -->
+       <div class="bg-background lg:py-24 py-10 lg:mt-22 mt-28">
+         <div class="lg:w-[560px]  w-[335px] mx-auto">
+            <div class="flex items-center justify-center ml-1/2">
+                <a class="btn w-36  h-10 mb-4 bg-white">
+                    <img class="w-4 h-4 " src="./assets/icons8-arrow-30.png" alt="">
+                    How it Works
+                </a> 
+            </div>
+         </div>
+         <h2 class="text-3xl font-extrabold flex items-center justify-center">Our Works Process</h2>
+         <p class="text-center text-balance mt-6">At our architecture firm, we turn your dreams into beautifully crafted spaces. Our work process is designed to ensure that every project reflects your unique vision while blending functionality and aesthetics.</p>
+         <div class="flex flex-col lg:flex-row gap-7 justify-center items-center mt-10">
+            <!-- card1 -->
+            <div class="w-[275px] h-[220px] flex flex-col gap-3 bg-card1 rounded-lg p-3">
+                <img class="w-8 h-8" src="./assets/concept.png" alt="">
+                <h2 class="font-medium text-xl">Concept</h2>
+                <p class="text-left text-pretty">We begin by understanding your vision, needs, and budget, translating them into a tailored architectural concept.</p>
+            </div>
+            <!-- card2 -->
+            <div class="w-[275px] h-[220px] flex flex-col gap-3 bg-card2 rounded-lg p-3">
+                <img class="w-8 h-8" src="./assets/flow-chart.png" alt="">
+                <h2 class="font-medium text-xl">Design Process</h2>
+                <p class="text-left text-pretty">Our team creates detailed plans and 3D models, refining every detail to ensure the design meets your expectations and is ready for construction.</p>
+            </div>
+            <!-- card3 -->
+            <div class="w-[275px] h-[220px] flex flex-col gap-3 bg-card3 rounded-lg p-3">
+                <img class="w-8 h-8" src="./assets/vision.png" alt="">
+                <h2 class="font-medium text-xl">Supervision</h2>
+                <p class="text-left text-pretty">We collaborate with you to clarify and define your architectural vision, setting the foundation for a project that reflects your unique style and aspirations.</p>
+            </div>
+            <!-- card4 -->
+            <div class="w-[275px] h-[220px] flex flex-col gap-3 bg-card4 rounded-lg p-3">
+                <img class="w-8 h-8" src="./assets/budget-planning.png" alt="">
+                <h2 class="font-medium text-xl">Budget Planning</h2>
+                <p class="text-left text-pretty">We establish a realistic budget that aligns with your financial goals, ensuring every aspect of the project is financially viable from start to finish.</p>
+            </div>
+
+         </div>
+       </div> 
 
     </main>
 </body>
